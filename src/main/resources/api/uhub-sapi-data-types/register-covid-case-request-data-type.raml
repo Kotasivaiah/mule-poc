@@ -1,0 +1,64 @@
+#%RAML 1.0 DataType
+type: object
+properties:
+  source:
+    type: string
+    example: "Hospital1"
+    required: true
+  caseType:
+    type: string
+    minLength: 1
+    maxLength: 60
+    example: "positive"
+    required: true
+  firstName:
+    type: string
+    example: "John"
+    required: true
+  lastName:
+    type: string
+    example: "Nixon"
+    required: true
+  phone:
+    type: string
+    example: "541-754-3010"
+    required: true
+  email:
+    type: string
+    example: "john@gmail.com"
+    required: false
+  dateOfBirth:
+    type: date-only
+    example: "1989-04-26"
+    required: true
+  nationalID:
+    type: string
+    example: "209-49-6193"
+    required: true
+  nationalIDType:
+    type: string
+    example: "SSN"
+    required: true
+  address:
+    type: object
+    properties:
+      streetAddress:
+        type: string
+        example: "1600 Pennsylvania Avenue NW"
+        required: true
+      city:
+        type: string
+        example: "Washington"
+        required: true
+      state:
+        type: string
+        example: "DC"
+        required: true
+      postal:
+        type: string
+        example: "20500"
+        required: true
+      country:
+        type: string
+        example: USA
+        required: true

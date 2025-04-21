@@ -1,0 +1,23 @@
+#%RAML 1.0 DataType
+type: object
+properties:
+  code:
+    type: integer
+    required: true
+    example: 400
+  message:
+    type: string
+    required: true
+    example: Bad request
+  description:
+    type: string
+    example: The server has not found anything matching the Request-URI
+    required: false
+  dateTime:
+    type: string
+    example: 2021-05-31T06:18:02Z
+    required: false
+  transactionId:
+    type: string
+    example: 48n32920-69ne-47b4-907d-fa15869f3c4d
+    required: false
